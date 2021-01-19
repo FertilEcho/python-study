@@ -18,14 +18,14 @@ character = pygame.image.load("/Users/echo/Desktop/공부/python_workspace/pygam
 character_size = character.get_rect().size #image size
 character_width = character_size[0]
 character_height = character_size[1]
-character_x_position = screen_width / 2 -35 #화면 가로의 절반 나눈 곳에 위치
-character_y_position = screen_height - character_height # 화면 세로 크기 아래 해당하는 위치
+character_x_position = screen_width / 2 -35 
+character_y_position = screen_height - character_height 
 
 #event loop
 running = True 
 while running:
-    for event in pygame.event.get(): #이벤트 발생 체크
-        if event.type == pygame.QUIT: #창이 닫혔을 때
+    for event in pygame.event.get(): #Check event
+        if event.type == pygame.QUIT: #close the window
             running = False
 
 
@@ -33,7 +33,7 @@ while running:
     screen.blit(character, (character_x_position, character_y_position))
 
 
-    pygame.display.update() #게임화면 다시 그리기
+    pygame.display.update() 
 
-# 종료
+#exit
 pygame.quit()

@@ -29,8 +29,8 @@ to_y = 0
 #event loop
 running = True 
 while running:
-    for event in pygame.event.get(): #이벤트 발생 체크
-        if event.type == pygame.QUIT: #창이 닫혔을 때
+    for event in pygame.event.get(): #check event
+        if event.type == pygame.QUIT: #window close
             running = False
 
         if event.type == pygame.KEYDOWN:
@@ -57,7 +57,7 @@ while running:
     screen.blit(character, (character_x_position, character_y_position))
 
 
-    pygame.display.update() #게임화면 다시 그리기
+    pygame.display.update() 
 
-# 종료
+#exit
 pygame.quit()
