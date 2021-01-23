@@ -8,7 +8,7 @@ screen_height = 720
 screen = pygame.display.set_mode((screen_width, screen_height))
 
 #title
-pygame.display.set_caption("MINI GAME")
+pygame.display.set_caption("mage")
 
 #background image
 background = pygame.image.load("/Users/echo/Desktop/공부/python_workspace/pygame_basic/background.png")

@@ -8,7 +8,7 @@ screen_height = 720
 screen = pygame.display.set_mode((screen_width, screen_height))
 
 #title
-pygame.display.set_caption("MINI GAME")
+pygame.display.set_caption("mage")
 
 #background image
 background = pygame.image.load("/Users/echo/Desktop/공부/python_workspace/pygame_basic/background.png")
@@ -17,7 +17,7 @@ background = pygame.image.load("/Users/echo/Desktop/공부/python_workspace/pyga
 running = True 
 while running:
     for event in pygame.event.get(): #이벤트 발생 체크
-        if event.type == pygame.QUIT: 
+        if event.type == pygame.QUIT:
             running = False
 
     screen.blit(background, (0,0))

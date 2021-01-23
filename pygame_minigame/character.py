@@ -8,13 +8,13 @@ screen_height = 720
 screen = pygame.display.set_mode((screen_width, screen_height))
 
 #title
-pygame.display.set_caption("MINI GAME")
+pygame.display.set_caption("mage")
 
 #background image
 background = pygame.image.load("/Users/echo/Desktop/공부/python_workspace/pygame_basic/background.png")
 
 #character
-character = pygame.image.load("/Users/echo/Desktop/공부/python_workspace/pygame_basic/character.jpg")
+character = pygame.image.load("/Users/echo/Desktop/공부/python_workspace/pygame_basic/character.png")
 character_size = character.get_rect().size #image size
 character_width = character_size[0]
 character_height = character_size[1]
