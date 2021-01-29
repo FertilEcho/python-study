@@ -13,7 +13,7 @@ pygame.display.set_caption("MINI GAME")
 #background image
 background = pygame.image.load("/Users/echo/Desktop/공부/python_workspace/pygame_basic/background.png")
 
-#event loop
+#이벤트루프
 running = True 
 while running:
     for event in pygame.event.get(): #check event
